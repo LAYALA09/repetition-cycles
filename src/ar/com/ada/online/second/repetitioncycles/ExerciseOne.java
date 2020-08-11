@@ -10,23 +10,37 @@ public class ExerciseOne {
 
         Scanner keyboard = new Scanner(System.in);
 
-        int arrayA[][] = new int[3][3];
+        int arrayA[][];
+        int sizeArray;
+        ;
+        int row;
+        int column;
 
-       //Cargar la matriz
+
+        //Cargar la matriz
+        System.out.println(" Ingrese el tamaño de la fila");
+        row = keyboard.nextInt();
+        System.out.println(" Ingrese el tamaño de la Columna");
+        column = keyboard.nextInt();
+
+
         System.out.println("Digite la matriz");
-        for (int i = 0; i < arrayA.length; i++) {
-            for (int j = 0; j < arrayA[i].length; j++) {
 
-                System.out.print("arrayA[ "+i+" ][ "+j+" ] : " );
+        arrayA = new int[row][column];
+        //Cargar la matriz
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < column; j++) {
+
+                System.out.print("arrayA[ " + i + " ][ " + j + " ] : ");
                 arrayA[i][j] = keyboard.nextInt();
             }
 
         }
         //muestro la matriz
-        System.out.println("Matriz original");
+        System.out.println("Matriz original:");
         for (int i = 0; i < arrayA.length; i++) {
             for (int j = 0; j < arrayA[0].length; j++) {
-                System.out.print(arrayA[i][j]  + " ");
+                System.out.print(arrayA[i][j] + " ");
 
             }
             System.out.println(" ");
@@ -44,7 +58,7 @@ public class ExerciseOne {
         System.out.println("La matriz traspuesta es : ");
         for (int i = 0; i < arrayA.length; i++) {
             for (int j = 0; j < arrayA[0].length; j++) {
-                System.out.print(arrayA [i][j]  + " ");
+                System.out.print(arrayA[i][j] + " ");
             }
             System.out.println(" ");
         }
