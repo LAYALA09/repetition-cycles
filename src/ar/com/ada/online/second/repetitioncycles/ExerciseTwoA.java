@@ -10,38 +10,45 @@ import java.util.Scanner;
 
         public static void main(String[] args) {
 
-            int[] arrayA = new int[5];
-            int[] arrayB = new int[5];
-            int[] arrayC = new int[5];
-
+            int[] arrayA ;
+            int[] arrayB ;
+            int[] arrayC ;
+            int sizeArray;
 
             Scanner keyboard = new Scanner(System.in);
 
-            System.out.println("Suma de vectores");
+            System.out.println(" Ingrese el tamñao de los arreglos");
+            sizeArray = keyboard.nextInt();
+            arrayA = new int[sizeArray];
+            arrayB = new int[sizeArray];
+            arrayC = new int[sizeArray];
+
+            System.out.println("Suma de vectores A + B = C ");
 
             System.out.println(" Vectores A");
+
             System.out.println(" Ingrese valor");
-            for (int i = 0; i <arrayA.length ; i++) {
+            for (int i = 0; i <sizeArray; i++) {
 
                 arrayA[i] = keyboard.nextInt();
 
             }
             System.out.println(" Vectores B");
             System.out.println(" Ingrese valor");
-            for (int i = 0; i < arrayB.length; i++) {
+            for (int i = 0; i < sizeArray; i++) {
 
                 arrayB[i] = keyboard.nextInt();
 
             }
 
 
-            for (int i = 0; i < arrayC.length; i++) {
+            for (int i = 0; i < sizeArray; i++) {
 
                 arrayC[i] = arrayB[i] + arrayA[i];
 
             }
             System.out.println("Muestra de Vector C");
-            for (int i = 0; i < arrayC.length; i++) {
+            for (int i = 0; i < sizeArray; i++) {
 
                 System.out.println(+ arrayC[i]);
 
