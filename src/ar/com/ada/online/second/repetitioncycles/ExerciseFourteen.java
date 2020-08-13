@@ -1,5 +1,5 @@
 package ar.com.ada.online.second.repetitioncycles;
-// Lea una matriz de cinco filas y seis columnas y que cuente los
+// Lea una matriz de cinco filas y cinco columnas  que cuente los
 //elementos negativos que contiene, así como también cuántos elementos de la diagonal
 //principal son igual a cero.
 
